@@ -1,0 +1,33 @@
+<div class="card" style="width: 18rem;">
+  <div id="check" class="card-body">
+    <h5 class="card-title">Selecione o serviço</h5>
+
+    <label class="label">
+      <div class="toggle">
+        <input (change)="onItemChange($event)" class="toggle-state" type="radio" name="check" value="1" />
+        <div class="indicator"></div>
+      </div>
+      <div class="label-text">pesquisar cep</div>
+    </label>
+    
+    <label class="label">
+      <div class="toggle">
+        <input [(ngModel)]="radio_value" (change)="onItemChange($event)" class="toggle-state" type="radio" name="check" value="2" />
+        <div class="indicator"></div>
+      </div>
+      <div class="label-text">calcular preço</div>
+    </label>
+    
+    <label class="label">
+      <div class="toggle">
+        <input [(ngModel)]="radio_value" (change)="onItemChange($event)" class="toggle-state" type="radio" name="check" value="3" />
+        <div class="indicator"></div>
+      </div>
+      <div class="label-text">calcular preço/prazo</div>
+    </label>
+
+    <div style="margin-top: 8px;">
+      <div (click)="pagina()" class="button"><span>Acessar</span></div>
+    </div>
+  </div>
+</div>
